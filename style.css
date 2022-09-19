@@ -1,0 +1,146 @@
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:0;
+	padding:0;
+	background-color: #34495e;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	height:100vh;
+	overflow:hidden;
+}
+
+.container{
+	width:500px;
+	height:500px;
+	background-color: #ccc;
+	border-radius:50%;
+	border:45px solid rgb(8, 8, 131);
+	position: relative;
+	overflow: hidden;
+	transition: 5s;
+}
+
+.container div{
+	height:50%;
+	width:200px;
+	position: absolute;
+	/*clip-path: polygon(100% 0 , 50% 100% , 0 0 );*/
+	transform:translateX(-50%);
+	transform-origin:bottom;
+	text-align:center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size:10px;
+	font-weight:bold;
+	font-family:sans-serif;
+	color:#fff;
+	left:135px;
+}
+
+.groups div{
+	height:50%;
+	width:200px;
+	position: absolute;
+	z-index: 200;	
+	transform-origin:bottom;
+	text-align:center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size:13px;
+	font-weight:bolder;
+	font-family:sans-serif;
+	color:#fff;
+	left:135px;
+}
+
+.container .one{
+	background-color: #fa09aa;
+	left: 100px;
+}
+
+.groups .g1 {
+	left: 36%;
+	bottom: 250px;
+}
+
+.container .two{
+	background-color: #00b7ff;
+	left: 310px;
+}
+
+.groups .g2 {
+	left: 49%;
+	bottom: 250px;
+}
+
+.container .three{
+	background-color: #f8e806;
+	left: 310px;
+    top: 215px;
+}
+
+.groups .g3 {
+	left: 49%;
+	top: 250px;
+}
+
+.container .four{
+	background-color: #4caf50;
+    left: 100px;
+    top: 215px;
+}
+
+.groups .g4 {
+	left: 36%;
+	top: 250px;
+}
+
+#spin{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:1000;
+	background-color: #e2e2e2;
+	text-transform: uppercase;
+	border:8px solid #fff;
+	font-weight:bold;
+	font-size:20px;
+	color:#a2a2a2;
+	width: 80px;
+	height:80px;
+	font-family: sans-serif;
+	border-radius:50%;
+	cursor: pointer;
+	outline:none;
+	letter-spacing: 1px;
+}
+
+.azn{
+	color: #a2a2a2;
+	font-weight: bold;
+	font-size: 4em;
+}
+
+.c {
+	font-size: 2rem;
+	transform: rotate(45deg);
+}
+
+.m{
+	transform: rotate(-45deg);
+}
+
+.p{
+	transform: rotate(135deg);
+}
+
+.a{
+	transform: rotate(-135deg);
+}
